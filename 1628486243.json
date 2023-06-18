@@ -1,0 +1,41 @@
+{
+  "title": "ChoiWheatley",
+  "rules": [
+    {
+      "description": "<Ctrl-CapsLock> to `en`",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": { "mandatory": ["left_control"] },
+            "key_code": "caps_lock"
+          },
+          "to": [{ "repeat": false, "key_code": "fn" }]
+        }
+      ]
+    },
+    {
+      "description": "esc to `en`",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape"
+          },
+          "to_if_alone": [
+            {
+              "select_input_source": {
+                "language": "en"
+              }
+            }
+          ],
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

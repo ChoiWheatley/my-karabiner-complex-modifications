@@ -1,0 +1,19 @@
+{
+    "title": "sample code",
+    "type": "basic",
+    "from": {
+        "key_code": "l",
+        "modifiers": {
+            "mandatory": ["command"],
+            "optional": ["caps_lock"]
+        }
+    },
+    "conditions": [
+        {
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+            ]
+        }
+    ]
+}
